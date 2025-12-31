@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INNOFESTA '25 | IEDC MES KVM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700;900&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Background Layers -->
+  <div class="bg-fixed"></div>
+  <div class="overlay-grain"></div>
+  <div class="fog-container">
+    <div class="fog-img fog-img-first"></div>
+    <div class="fog-img fog-img-second"></div>
+  </div>
+
+  <!-- 3D Snitch Layer (Fixed) -->
+  <div id="canvas-container"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-light"></div>
+  <img id="magic-wand" src="/wand-final.png" alt="Wand" width="50">
+
+  <!-- Navigation -->
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- HEADER -->
+      <header class="main-header">
+        <div class="logo">IEDC MES KVM</div>
+        <nav class="desktop-nav">
+          <a href="#about" class="nav-link">The Prophecy</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#register" class="btn-nav">Enrol</a>
+        </nav>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <div class="hero-container">
+          <div class="hero-text-mask">
+            <h1 class="hero-title" data-speed="0.5">INNO<br>FESTA</h1>
+          </div>
+          <div class="hero-meta" data-speed="0.2">
+            <span class="edition">EDITION '25</span>
+            <span class="date">JAN 27 — FEB 02</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE STRIP -->
+      <div class="marquee-section">
+        <div class="marquee-track">
+          <div class="marquee-text">MAGIC • TECH • WIZARDRY • INNOVATION • MAGIC • TECH • WIZARDRY • INNOVATION •</div>
+          <div class="marquee-text">MAGIC • TECH • WIZARDRY • INNOVATION • MAGIC • TECH • WIZARDRY • INNOVATION •</div>
+        </div>
+      </div>
+
+      <!-- EVENTS SCHEDULE SECTION -->
+      <section class="timeline-section" id="events">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">THE SCHEDULE</h2>
+
+        <!-- DAY 1 -->
+        <div class="day-block">
+          <h2 class="day-title">Day 1 <span class="date">Jan 27</span></h2>
+          <div class="event-grid">
+            <div class="event-card">
+              <div class="time">10:00 AM - 12:00 PM</div>
+              <h3>Grand Inauguration</h3>
+              <p>The Opening Ceremony</p>
+            </div>
+            <div class="event-card">
+              <div class="time">2:00 PM - 4:00 PM</div>
+              <h3>Perfume Workshop</h3>
+              <div class="location">AV Hall</div>
+            </div>
+            <div class="event-card">
+              <div class="time">2:00 PM - 4:00 PM</div>
+              <h3>Excel Mastery</h3>
+              <div class="location">Retail Lab</div>
+            </div>
+            <div class="event-card">
+              <div class="time">2:00 PM - 4:00 PM</div>
+              <h3>Website Wizardry</h3>
+              <div class="location">ICT Lab</div>
+            </div>
+            <div class="event-card">
+              <div class="time">2:00 PM - 4:00 PM</div>
+              <h3>ATS Resume Workshop</h3>
+              <div class="location">Retail Classroom</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="day-block">
+          <h2 class="day-title">Day 2 <span class="date">Jan 28</span></h2>
+          <div class="event-grid">
+            <div class="event-card flagship">
+              <div class="time">10:00 AM - 12:00 PM</div>
+              <h3>The Hackathon</h3>
+              <p>Code against the clock.</p>
+            </div>
+
+            <div class="event-card game-card">
+              <h3>Spot Games</h3>
+              <ul class="game-list">
+                <li>Dart Board Games (₹20 Entry / Prize)</li>
+                <li>Blink Challenges (₹10 Entry / ₹200 Prize)</li>
+                <li>Spin The Wheel (₹20)</li>
+                <li>Sing a Song (1 min)</li>
+                <li>Eat Chilies (No Water Challenge)</li>
+                <li>20 Pushups</li>
+                <li>Full Lemon Challenge</li>
+                <li>Speak 60s Without Blinking</li>
+                <li>Reverse Alphabet (Z to A)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="day-block">
+          <h2 class="day-title">Day 3 <span class="date">Jan 29</span></h2>
+          <div class="event-grid">
+            <div class="event-card competition">
+              <h3>Best Manager</h3>
+              <div class="prize">Prize: ₹2222</div>
+            </div>
+            <div class="event-card competition">
+              <h3>Best Management Team</h3>
+              <div class="prize">Prize: ₹5555</div>
+            </div>
+            <div class="event-card competition">
+              <h3>Treasure Hunt</h3>
+              <div class="prize">Prize: ₹6666</div>
+            </div>
+            <div class="event-card competition">
+              <h3>Entrepreneurship Pitch</h3>
+              <div class="prize">Prize: ₹3333</div>
+            </div>
+            <div class="event-card competition">
+              <h3>Business Quiz</h3>
+              <div class="prize">Prize: ₹2222</div>
+            </div>
+            <div class="event-card competition">
+              <h3>Reels Competition</h3>
+              <div class="prize">Prize: ₹2222</div>
+            </div>
+            <div class="event-card stage">
+              <h3>Spot Dance & Role Play</h3>
+              <div class="prize">Prize: ₹2222 Each</div>
+            </div>
+            <div class="event-card stage">
+              <h3>Unplugged</h3>
+              <p>Live Music Session</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="day-block">
+          <h2 class="day-title">Day 4 <span class="date">Jan 30</span></h2>
+          <div class="event-grid">
+            <div class="event-card workshop">
+              <h3>Plan A Workshop</h3>
+              <p>By RizNiya</p>
+            </div>
+            <div class="event-card workshop">
+              <h3>Plan B Meet</h3>
+              <p>Budding Entrepreneurs Meetup</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="footer-content">
+          <h2 class="footer-logo">IEDC MES KVM</h2>
+          <div class="footer-links">
+            <a href="https://www.instagram.com/iedcmeskvm/?igsh=MTFyZWRuNW9mYWR6MA%3D%3D#" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/company/iedcmeskvm" target="_blank">LinkedIn</a>
+            <a href="#">Owl Post</a>
+          </div>
+          <p class="copyright">MISCHIEF MANAGED © 2025</p>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
