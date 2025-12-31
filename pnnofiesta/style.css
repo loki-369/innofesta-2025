@@ -532,11 +532,62 @@ button,
 }
 
 @media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        /* Darker background for readability */
+        backdrop-filter: blur(15px);
+        height: auto;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+
+    .desktop-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* Prevent overflow */
+    }
+
+    .desktop-nav a {
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+
+    .hero-title {
+        font-size: 15vw;
+    }
+
+    .hero-meta {
+        bottom: 100px;
+        /* Raise meta info */
+    }
+
+    .marquee-text {
+        font-size: 1.5rem;
+    }
+
+    .timeline-section {
+        padding: 20px 5%;
+    }
+
     .event-card.flagship {
         grid-column: span 1;
     }
 
     .day-title {
         font-size: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .day-title .date {
+        margin-top: 5px;
     }
 }
