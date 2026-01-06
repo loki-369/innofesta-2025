@@ -246,3 +246,6 @@ a { text-decoration: none; color: inherit; cursor: none; }
 }
 
 /* Cache Bust: 20260106-023536 */
+
+/* --- FIXED WAND CURSOR --- */
+#magic-wand { position: fixed; top: 0; left: 0; width: 60px; height: auto; pointer-events: none; z-index: 9999; transform: translate(-10%, -10%); display: block !important; background: transparent !important; } @media (min-width: 769px) { body { cursor: none; } } @media (max-width: 768px) { #magic-wand { display: none !important; } }
