@@ -35,7 +35,7 @@ export function initSnitch() {
 
     // --- GLOW HALO (BACKGROUND) ---
     const spriteMaterial = new THREE.SpriteMaterial({
-        map: new THREE.TextureLoader().load('https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/sprites/glow.png'),
+        map: new THREE.TextureLoader().load('./wand-glow.png'),
         color: 0xffaa00,
         transparent: true,
         blending: THREE.AdditiveBlending,
@@ -285,3 +285,4 @@ export function initSnitch() {
 
     animate();
 }
+
