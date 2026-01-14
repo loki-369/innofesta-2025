@@ -531,7 +531,7 @@ button,
     font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { .event-grid { grid-template-columns: 1fr !important; } .events-section { padding: 50px 20px; }
     .event-card.flagship {
         grid-column: span 1;
     }
