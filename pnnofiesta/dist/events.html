@@ -5,12 +5,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events | INNOFESTA '26</title>
+    <title>Events | INNOFESTA '26</title>
+    <meta name="description"
+        content="Explore the full 6-day schedule of INNOFESTA '26. Register for workshops, the Spellcraft Hackathon, and various competitions.">
+    <meta property="og:title" content="Events Schedule | INNOFESTA '26">
+    <meta property="og:description"
+        content="Check out the workshops, hackathons, and fun events happening at INNOFESTA '26.">
+    <meta property="og:image" content="/assets/IEDC%20Poster-_M_k5I1D.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Recursive:wght@300..1000&display=swap"
         rel="stylesheet">
-  <script type="module" crossorigin src="/assets/main-DmqCR0lP.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-C4GwDi0r.css">
+  <script type="module" crossorigin src="/assets/main-DrnBeWy1.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CCbfNe43.css">
 </head>
 
 <body>
@@ -31,16 +37,22 @@
                 <h3 class="day-title">Day 1 <span class="date">Jan 29</span></h3>
                 <div class="event-grid">
                     <div class="event-card workshop">
-                        <h3>Grand Inauguration</h3><p class='event-type'>Opening Ceremony</p></div><div class='event-card workshop'><h3>Website Wizardry</h3>
+                        <h3>Grand Inauguration</h3>
+                        <p class="event-type">Opening Ceremony</p>
+                    </div>
+                    <div class="event-card workshop">
+                        <h3>Website Wizardry</h3>
                         <p class="event-type">Workshop</p>
-                        <button class="btn secondary-btn" onclick="showGuidelines('website')">Guidelines</button>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <button class="btn secondary-btn" onclick="openModal('website')"
+                            aria-label="View guidelines for Website Wizardry">Guidelines</button>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Website Wizardry">Register</a>
                     </div>
                     <div class="event-card workshop">
                         <h3>ATS Resume Building</h3>
                         <p class="event-type">Workshop</p>
-                        <button class="btn secondary-btn" onclick="showGuidelines('ats')">Guidelines</button>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <button class="btn secondary-btn" onclick="openModal('ats')"
+                            aria-label="View guidelines for ATS Resume Building">Guidelines</button>
+                        <a href="#" class="btn primary-btn" aria-label="Register for ATS Resume Building">Register</a>
                     </div>
                 </div>
             </div>
@@ -53,9 +65,10 @@
                         <h3>Spellcraft</h3>
                         <p class="event-type">6-Day Hybrid Hackathon</p>
                         <p class="event-details">Team: ₹600 (Max 3) | Individual: ₹300</p>
-                        <button class="btn secondary-btn" onclick="showGuidelines('spellcraft')">Guidelines</button>
+                        <button class="btn secondary-btn" onclick="openModal('spellcraft')"
+                            aria-label="View guidelines for Spellcraft">Guidelines</button>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScf7pTgByzs5dEdufZ0WlXLDdiK09c3ulbAbrhqsKTgiUXANg/viewform"
-                            target="_blank" class="btn primary-btn">Register</a>
+                            target="_blank" class="btn primary-btn" aria-label="Register for Spellcraft">Register</a>
                     </div>
                 </div>
             </div>
@@ -68,60 +81,60 @@
                         <h3>Chronarch</h3>
                         <p class="event-type">Best Manager</p>
                         <p class="event-details">₹100/head (Individual)</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Chronarch">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Synarchs Council</h3>
                         <p class="event-type">Best Management Team</p>
                         <p class="event-details">₹100/head (4 persons)</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Synarchs Council">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Archahunt</h3>
                         <p class="event-type">Treasure Hunt</p>
                         <p class="event-details">₹100/head (4 persons)</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Archahunt">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Venture Forum</h3>
                         <p class="event-type">Entrepreneurship Pitch</p>
                         <p class="event-details">₹100/head (3 persons)</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Venture Forum">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Chamber of Commerce</h3>
                         <p class="event-type">Business Quiz</p>
                         <p class="event-details">₹100/head (2 persons)</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Chamber of Commerce">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Revelio</h3>
                         <p class="event-type">Reels Competition</p>
                         <p class="event-details">Free Registration</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Revelio">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Grove & Galleons</h3>
                         <p class="event-type">Spot Choreography</p>
                         <p class="event-details">Individual</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Grove & Galleons">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Influencio</h3>
                         <p class="event-type">Best Marketing Team</p>
                         <p class="event-details">₹50/head (School Students)</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Influencio">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Potter Verse</h3>
                         <p class="event-type">Ad Quiz</p>
                         <p class="event-details">₹50/head (School Students)</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Potter Verse">Register</a>
                     </div>
                     <div class="event-card game-card">
                         <h3>Acoustica</h3>
                         <p class="event-type">Unplugged Live Music</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Acoustica">Register</a>
                     </div>
                 </div>
             </div>
@@ -132,11 +145,12 @@
                 <div class="event-grid">
                     <div class="event-card workshop">
                         <h3>Budding Entrepreneurs Meet</h3>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn"
+                            aria-label="Register for Budding Entrepreneurs Meet">Register</a>
                     </div>
                     <div class="event-card workshop">
                         <h3>Ex-Execom Talk</h3>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Ex-Execom Talk">Register</a>
                     </div>
                 </div>
             </div>
@@ -148,22 +162,22 @@
                     <div class="event-card workshop">
                         <h3>Talk Session</h3>
                         <p class="event-details">RP: Sheela Mam | AV Hall | 10:30am - 11:30am</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Talk Session">Register</a>
                     </div>
                     <div class="event-card workshop">
                         <h3>Cake Baking Workshop</h3>
                         <p class="event-details">RP: Thesni Basheer | MES Central School | 10:30am</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Cake Baking Workshop">Register</a>
                     </div>
                     <div class="event-card workshop">
                         <h3>Goal Setting Workshop</h3>
                         <p class="event-details">RP: Hiba</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Goal Setting Workshop">Register</a>
                     </div>
                     <div class="event-card workshop">
                         <h3>Editing Workshop</h3>
                         <p class="event-details">RP: Liya AV | 1:30pm - 3:30pm</p>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Editing Workshop">Register</a>
                     </div>
                 </div>
             </div>
@@ -174,13 +188,27 @@
                 <div class="event-grid">
                     <div class="event-card workshop">
                         <h3>Design Thinking Workshop</h3>
-                        <a href="#" class="btn primary-btn">Register</a>
+                        <a href="#" class="btn primary-btn"
+                            aria-label="Register for Design Thinking Workshop">Register</a>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
+
+    <!-- Modal Structure -->
+    <div id="guidelinesModal" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Event Guidelines</h3>
+                <button class="modal-close" onclick="closeModal(event)">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Guidelines content will be injected here -->
+            </div>
+        </div>
+    </div>
 
     <footer class="main-footer">
         <div class="footer-content">
@@ -190,21 +218,35 @@
     </footer>
 
     <script>
-        function showGuidelines(type) {
+        const modal = document.getElementById('guidelinesModal');
+        const modalBody = document.getElementById('modalBody');
+
+        function openModal(type) {
             let message = "";
             if (type === 'website') {
-                message = "Guidelines: Bring laptop and other common guidelines.";
+                message = "• Bring laptop.\n• Common guidelines apply.";
             } else if (type === 'ats') {
-                message = "Guidelines: Phone and internet connection and common guidelines.";
+                message = "• Phone and internet connection required.\n• Common guidelines apply.";
             } else if (type === 'spellcraft') {
-                message = "Guidelines:\n\n" +
-                    "* Attendance at the Generative AI workshop on 29 January (forenoon) is mandatory for all participants.\n" +
-                    "* The Hackathon is conducted in hybrid mode, after attending the first-day session, participants may continue building their project from anywhere.\n" +
-                    "* Team registration fee is ₹600 with a maximum of 3 members per team, and individual registration fee is ₹300.\n" +
-                    "* Project development begins after the mandatory session, and final submissions must be completed by 2 February; late submissions will not be accepted.\n" +
-                    "* Prize will be announced on 3rd February via online.";
+                message = "• Attendance at the Generative AI workshop on 29 January (forenoon) is mandatory for all participants.\n\n" +
+                    "• The Hackathon is conducted in hybrid mode, after attending the first-day session, participants may continue building their project from anywhere.\n\n" +
+                    "• Team registration fee is ₹600 with a maximum of 3 members per team, and individual registration fee is ₹300.\n\n" +
+                    "• Project development begins after the mandatory session, and final submissions must be completed by 2 February; late submissions will not be accepted.\n\n" +
+                    "• Prize will be announced on 3rd February via online.";
             }
-            if (message) alert(message);
+
+            if (message) {
+                modalBody.innerText = message;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        }
+
+        function closeModal(event) {
+            if (event.target === modal || event.target.classList.contains('modal-close')) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
         }
     </script>
 </body>
