@@ -792,3 +792,66 @@ a.btn {
   margin-top: 5px;
 }
 
+
+/* --- FINAL SCHEDULE CSS --- */
+
+/* Vertical Schedule Layout */
+.event-grid-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.day-block {
+  text-align: center;
+}
+
+.event-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Override Card Styles for Grid */
+.event-cards-container .event-card {
+  width: 100%;
+  max-width: 350px;
+  min-height: 250px;
+  flex: 1 1 300px; 
+}
+
+/* Ensure Day Title is Visible */
+.day-title {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+/* Infinite Marquee Fix */
+@keyframes scrollText {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } 
+}
+/* Ensure content is wide enough for -50% to work smoothly */
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 50px; /* buffer */
+  animation: scrollText 40s linear infinite; /* Slower for readability */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .event-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-cards-container .event-card {
+        width: 100%;
+    }
+}
+
