@@ -209,104 +209,177 @@
 
 </html>
 <section id="events" class="events-section">
-    <h2 class="section-title"
-        style="text-align: center; margin-bottom: 2rem; font-size: 2.5rem; text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);">
-        The Schedule</h2>
+<div class="marquee-bar">
+  <div class="marquee-content">
+    MAGIC � TECH � WIZARDRY � INNOVATION   MAGIC  TECH  WIZARDRY  INNOVATION   MAGIC  TECH  WIZARDRY  INNOVATION  
+  </div>
+</div>
 
-    <div class="marquee-track">
+            <h2 class="section-title">The Schedule</h2>
 
-        <!-- Day 1 -->
-        <div class="event-card">
-            <div class="time">Jan 29</div>
-            <h3>Grand Inauguration</h3>
-            <div class="location">Opening Ceremony</div>
-            <a href="events.html" class="btn primary-btn">Info</a>
-        </div>
-        <div class="event-card">
-            <div class="time">Jan 29</div>
-            <h3>Website Wizardry</h3>
-            <div class="location">ICT Lab</div>
-            <a href="events.html" class="btn primary-btn">Register</a>
-        </div>
-        <div class="event-card">
-            <div class="time">Jan 29</div>
-            <h3>ATS Resume</h3>
-            <div class="location">Retail Lab</div>
-            <a href="events.html" class="btn primary-btn">Register</a>
-        </div>
+            <!-- Day 1 -->
+            <div class="day-container">
+                <h3 class="day-title">Day 1 <span class="date">Jan 29</span></h3>
+                <div class="event-grid">
+                    <div class="event-card workshop">
+                        <h3>Grand Inauguration</h3>
+                        <p class="event-type">Opening Ceremony</p>
+                    </div>
+                    <div class="event-card workshop">
+                        <h3>Website Wizardry</h3>
+                        <p class="event-type">Workshop</p>
+                        <button class="btn secondary-btn" onclick="openModal('website')"
+                            aria-label="View guidelines for Website Wizardry">Guidelines</button>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Website Wizardry">Register</a>
+                    </div>
+                    <div class="event-card workshop">
+                        <h3>ATS Resume Building</h3>
+                        <p class="event-type">Workshop</p>
+                        <button class="btn secondary-btn" onclick="openModal('ats')"
+                            aria-label="View guidelines for ATS Resume Building">Guidelines</button>
+                        <a href="#" class="btn primary-btn" aria-label="Register for ATS Resume Building">Register</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Day 2 -->
-        <div class="event-card flagship">
-            <div class="time">Jan 30</div>
-            <h3>Spellcraft</h3>
-            <div class="location">Hybrid Hackathon</div>
-            <a href="events.html" class="btn primary-btn" style="background: var(--color-gold); color: #000;">Register
-                Now</a>
-        </div>
+            <!-- Day 2 -->
+            <div class="day-container">
+                <h3 class="day-title">Day 2 <span class="date">Jan 30</span></h3>
+                <div class="event-grid">
+                    <div class="event-card game-card">
+                        <h3>Spellcraft</h3>
+                        <p class="event-type">6-Day Hybrid Hackathon</p>
+                        <p class="event-details">Team: ₹600 (Max 3) | Individual: ₹300</p>
+                        <button class="btn secondary-btn" onclick="openModal('spellcraft')"
+                            aria-label="View guidelines for Spellcraft">Guidelines</button>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScf7pTgByzs5dEdufZ0WlXLDdiK09c3ulbAbrhqsKTgiUXANg/viewform"
+                            target="_blank" class="btn primary-btn" aria-label="Register for Spellcraft">Register</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Day 3 (Highlights) -->
-        <div class="event-card">
-            <div class="time">Jan 31</div>
-            <h3>IEDC Fest</h3>
-            <div class="location">Day of Competitions</div>
-            <a href="events.html" class="btn primary-btn">View All</a>
-        </div>
-        <div class="event-card">
-            <div class="time">Jan 31</div>
-            <h3>Chronarch</h3>
-            <div class="location">Best Manager</div>
-            <a href="events.html" class="btn primary-btn">Register</a>
-        </div>
-        <div class="event-card">
-            <div class="time">Jan 31</div>
-            <h3>Acoustica</h3>
-            <div class="location">Live Music</div>
-            <a href="events.html" class="btn primary-btn">Join</a>
-        </div>
+            <!-- Day 3 -->
+            <div class="day-container">
+                <h3 class="day-title">Day 3 <span class="date">Jan 31</span> - IEDC Fest</h3>
+                <div class="event-grid">
+                    <div class="event-card game-card">
+                        <h3>Chronarch</h3>
+                        <p class="event-type">Best Manager</p>
+                        <p class="event-details">₹100/head (Individual)</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Chronarch">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Synarchs Council</h3>
+                        <p class="event-type">Best Management Team</p>
+                        <p class="event-details">₹100/head (4 persons)</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Synarchs Council">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Archahunt</h3>
+                        <p class="event-type">Treasure Hunt</p>
+                        <p class="event-details">₹100/head (4 persons)</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Archahunt">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Venture Forum</h3>
+                        <p class="event-type">Entrepreneurship Pitch</p>
+                        <p class="event-details">₹100/head (3 persons)</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Venture Forum">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Chamber of Commerce</h3>
+                        <p class="event-type">Business Quiz</p>
+                        <p class="event-details">₹100/head (2 persons)</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Chamber of Commerce">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Revelio</h3>
+                        <p class="event-type">Reels Competition</p>
+                        <p class="event-details">Free Registration</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Revelio">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Grove & Galleons</h3>
+                        <p class="event-type">Spot Choreography</p>
+                        <p class="event-details">Individual</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Grove & Galleons">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Influencio</h3>
+                        <p class="event-type">Best Marketing Team</p>
+                        <p class="event-details">₹50/head (School Students)</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Influencio">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Potter Verse</h3>
+                        <p class="event-type">Ad Quiz</p>
+                        <p class="event-details">₹50/head (School Students)</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Potter Verse">Register</a>
+                    </div>
+                    <div class="event-card game-card">
+                        <h3>Acoustica</h3>
+                        <p class="event-type">Unplugged Live Music</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Acoustica">Register</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Day 4 -->
-        <div class="event-card">
-            <div class="time">Feb 1</div>
-            <h3>Entrepreneurs Meet</h3>
-            <div class="location">Networking</div>
-            <a href="events.html" class="btn primary-btn">Join</a>
-        </div>
-        <div class="event-card">
-            <div class="time">Feb 1</div>
-            <h3>Ex-Execom Talk</h3>
-            <div class="location">Talk Session</div>
-            <a href="events.html" class="btn primary-btn">Listen</a>
-        </div>
+            <!-- Day 4 -->
+            <div class="day-container">
+                <h3 class="day-title">Day 4 <span class="date">Feb 1</span></h3>
+                <div class="event-grid">
+                    <div class="event-card workshop">
+                        <h3>Budding Entrepreneurs Meet</h3>
+                        <a href="#" class="btn primary-btn"
+                            aria-label="Register for Budding Entrepreneurs Meet">Register</a>
+                    </div>
+                    <div class="event-card workshop">
+                        <h3>Ex-Execom Talk</h3>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Ex-Execom Talk">Register</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Day 5 -->
-        <div class="event-card">
-            <div class="time">Feb 2</div>
-            <h3>WING Workshops</h3>
-            <div class="location">Talks & Skills</div>
-            <a href="events.html" class="btn primary-btn">Explore</a>
-        </div>
-        <div class="event-card">
-            <div class="time">Feb 2</div>
-            <h3>Cake Baking</h3>
-            <div class="location">Workshop</div>
-            <a href="events.html" class="btn primary-btn">Register</a>
-        </div>
+            <!-- Day 5 -->
+            <div class="day-container">
+                <h3 class="day-title">Day 5 <span class="date">Feb 2</span> - WING</h3>
+                <div class="event-grid">
+                    <div class="event-card workshop">
+                        <h3>Talk Session</h3>
+                        <p class="event-details">RP: Sheela Mam | AV Hall | 10:30am - 11:30am</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Talk Session">Register</a>
+                    </div>
+                    <div class="event-card workshop">
+                        <h3>Cake Baking Workshop</h3>
+                        <p class="event-details">RP: Thesni Basheer | MES Central School | 10:30am</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Cake Baking Workshop">Register</a>
+                    </div>
+                    <div class="event-card workshop">
+                        <h3>Goal Setting Workshop</h3>
+                        <p class="event-details">RP: Hiba</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Goal Setting Workshop">Register</a>
+                    </div>
+                    <div class="event-card workshop">
+                        <h3>Editing Workshop</h3>
+                        <p class="event-details">RP: Liya AV | 1:30pm - 3:30pm</p>
+                        <a href="#" class="btn primary-btn" aria-label="Register for Editing Workshop">Register</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Day 6 -->
-        <div class="event-card">
-            <div class="time">Feb 3</div>
-            <h3>Design Thinking</h3>
-            <div class="location">Workshop</div>
-            <a href="events.html" class="btn primary-btn">Register</a>
-        </div>
+            <!-- Day 6 -->
+            <div class="day-container">
+                <h3 class="day-title">Day 6 <span class="date">Feb 3</span></h3>
+                <div class="event-grid">
+                    <div class="event-card workshop">
+                        <h3>Design Thinking Workshop</h3>
+                        <a href="#" class="btn primary-btn"
+                            aria-label="Register for Design Thinking Workshop">Register</a>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-
-    <div style="text-align: center; margin-top: 2rem;">
-        <a href="events.html" class="btn secondary-btn"
-            style="padding: 12px 30px; font-size: 1.1rem; letter-spacing: 1px;">View Full Schedule</a>
-    </div>
-</section>
+        </section>
     </main>
 
     <!-- Modal Structure -->
@@ -365,5 +438,6 @@
 </body>
 
 </html>
+
 
 

@@ -726,3 +726,69 @@ a.btn {
   text-decoration: none;
 }
 
+
+/* --- CONSOLIDATION FIXES --- */
+
+/* 1. Fix Yellow Banner (Marquee Bar) */
+.marquee-bar {
+  background: var(--color-gold);
+  color: #000;
+  padding: 15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-header);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 30px 0 50px 0;
+  width: 100%;
+}
+.marquee-content {
+  display: inline-block;
+  animation: scrollText 20s linear infinite;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* 2. Reset Event Grid for Vertical Layout */
+.events-section .event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Reset card from horizontal flex to block */
+.events-section .event-card {
+  min-width: auto; /* Reset from 300px */
+  flex: none;      /* Reset flex behavior */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Specific Day Title Styling */
+.day-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.day-title .date {
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  font-family: var(--font-body);
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
