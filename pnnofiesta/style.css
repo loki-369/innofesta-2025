@@ -645,3 +645,24 @@ button,
   transform: translateY(0) scale(0.98);
 }
 
+
+/* Refined Marquee Styles */
+.marquee-track {
+  display: flex !important;
+  flex-direction: row !important;
+  overflow-x: scroll !important;
+  -webkit-overflow-scrolling: touch;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.event-card {
+  min-width: 300px;
+  flex: 0 0 auto; /* Prevent shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
