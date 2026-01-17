@@ -380,7 +380,13 @@
             let message = "";
             let title = "Guidelines";
 
-            if (type === "chronarch") {
+            if (type === "website") {
+                title = "Webelio - Website Wizardry";
+                message = "• Bring laptop.\n• Common guidelines apply.";
+            } else if (type === "ats") {
+                title = "ATS Resume Workshop";
+                message = "• Phone and internet connection required.\n• Common guidelines apply.";
+            } else if (type === "chronarch") {
                 title = "Best Manager - Chronarch";
                 message = "• Participants must report at the venue on time as per the given schedule.\n\n" +
                     "• Each participant should carry a mobile phone with a stable internet connection (mandatory).\n\n" +
