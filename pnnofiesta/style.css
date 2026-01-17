@@ -577,9 +577,33 @@ button,
     border-radius: 8px;
     max-width: 500px;
     width: 90%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
     position: relative;
     box-shadow: 0 0 20px rgba(197, 160, 89, 0.2);
     font-family: var(--font-body);
+}
+
+.modal-body {
+    overflow-y: auto;
+    padding-right: 10px;
+    /* Space for scrollbar */
+    max-height: 100%;
+}
+
+/* Custom Scrollbar for Modal */
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: var(--color-gold);
+    border-radius: 3px;
 }
 
 .modal-header {
