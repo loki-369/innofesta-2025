@@ -802,8 +802,38 @@ a.btn {
 
 /* Ensure Day Title is Visible */
 .day-title {
-    display: inline-block;
     margin-bottom: 1.5rem;
+}
+
+/* --- Sponsors Section --- */
+.sponsors-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.sponsor-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    filter: grayscale(100%) brightness(0.8);
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.sponsor-logo:hover {
+    filter: grayscale(0%) brightness(1.1);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Infinite Marquee Fix */

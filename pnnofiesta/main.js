@@ -107,5 +107,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 4. Render Sponsors
+    const sponsorsGrid = document.getElementById('sponsors-grid');
+    if (sponsorsGrid) {
+        import('./sponsors.js').then(module => {
+            const sponsors = module.sponsors;
+            sponsors.forEach(sponsor => {
+                const img = document.createElement('img');
+                img.src = sponsor.logo;
+                img.alt = sponsor.name;
+                img.className = 'sponsor-logo';
+                sponsorsGrid.appendChild(img);
+            });
+        });
+    }
+
     console.log("Heavy Build Loaded ⚡");
 });
